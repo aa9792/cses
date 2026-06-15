@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>港都 AI STEAM 課程模組設計器</title>
+    <link rel="stylesheet" href="styles.css?v=filters-scroll-20260615" />
+  </head>
+  <body>
+    <header class="hero">
+      <img class="hero__image" src="assets/port-ai-steam-hero.png" alt="港都教室裡，學生使用真空成型機、3D列印零件、平板與港灣模型進行AI STEAM學習" />
+      <div class="hero__shade"></div>
+      <nav class="topbar" aria-label="主要導覽">
+        <a href="#framework">課程架構</a>
+        <a href="#builder">課程挑選</a>
+        <a href="#stage-notes">階段說明</a>
+      </nav>
+      <section class="hero__content">
+        <p class="eyebrow">地方特色 x AI x STEAM x 真空成型 x 3D列印</p>
+        <h1>港都 AI STEAM 課程模組設計器</h1>
+        <p>
+          以基隆港式的港都日常為起點，結合「109海洋基地學校計畫案」的航海大冒險課程，讓學生從看見船、讀懂航行資料，到製作船體、船舵與遙控明輪船。老師可依年段、節數與設備條件快速組合課程。
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#builder">開始挑選課程</a>
+          <button class="button button--ghost" id="printPage" type="button">列印架構</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro" aria-labelledby="design-principles">
+        <div class="section__heading">
+          <p class="eyebrow">模組設計建議</p>
+          <h2 id="design-principles">一條貫穿低中高年級的學習主線</h2>
+        </div>
+        <div class="principles" aria-label="課程設計原則">
+          <article>
+            <span>01</span>
+            <h3>地方感先行</h3>
+            <p>以港口、船舶、燈塔、起重機、海氣象、航蹤與海洋污染作為探究素材，學生先理解自己的城市。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>AI 做為學習工具</h3>
+            <p>低年級用AI辨識與提問，中年級用資料判讀與分類，高年級用模型思考、決策與倫理檢核。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>數位製造做為實作核心</h3>
+            <p>真空成型適合做港灣地形、船體外殼與感測器外罩；3D列印適合做船舵、明輪、支架與可重複測試的標準零件。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>因材網支援差異化</h3>
+            <p>每個教案都安排因材網課前診斷、課中任務或課後補強，讓學生依自己的程度取得練習與回饋。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section framework" id="framework" aria-labelledby="framework-title">
+        <div class="section__heading section__heading--wide">
+          <div>
+            <p class="eyebrow">課程架構圖</p>
+            <h2 id="framework-title">低、中、高年級螺旋式課程</h2>
+          </div>
+          <button class="button button--secondary print-trigger" type="button">列印架構</button>
+        </div>
+        <div class="framework-grid">
+          <article class="stage stage--low">
+            <div class="stage__tag">低年級</div>
+            <h3>看見港都</h3>
+            <p>從觀察、分類、故事與圖像創作開始，建立港口與船舶的基本概念。</p>
+            <ul>
+              <li>AI 看圖說船：船舶特徵與用途</li>
+              <li>真空成型：船徽、燈塔、港灣浮雕</li>
+              <li>3D列印：標準貨物、簡易船舶配件，由教師預先列印</li>
+              <li>成果：我的港都小圖鑑</li>
+            </ul>
+          </article>
+          <article class="stage stage--mid">
+            <div class="stage__tag">中年級</div>
+            <h3>讀懂航行</h3>
+            <p>以海氣象、AIS 航蹤與港區停泊規劃，練習資料判讀與模型製作。</p>
+            <ul>
+              <li>AI 分類：天氣、浪高、船種與航行風險</li>
+              <li>真空成型：港灣地形盤、燈塔導引模型</li>
+              <li>3D列印：船舵、馬達固定座、航道障礙物</li>
+              <li>成果：小船長進港任務包</li>
+            </ul>
+          </article>
+          <article class="stage stage--high">
+            <div class="stage__tag">高年級</div>
+            <h3>改造港灣</h3>
+            <p>以永續港灣為挑戰，整合AI資料、工程設計、材料實作與公民行動。</p>
+            <ul>
+              <li>AI 決策：海廢熱點、船流、安全與生態衝突</li>
+              <li>真空成型：清潔船外殼、感測器防水罩、展示模型</li>
+              <li>3D列印：明輪、船舵、micro:bit固定架與改良零件</li>
+              <li>成果：AI 永續港灣提案展</li>
+            </ul>
+          </article>
+        </div>
+        <div class="pathway" aria-label="學習流程">
+          <span>觀察港都</span>
+          <span>AI分類與提問</span>
+          <span>資料判讀</span>
+          <span>數位製造原型</span>
+          <span>測試改良</span>
+          <span>公開發表</span>
+        </div>
+      </section>
+
+      <section class="section builder" id="builder" aria-labelledby="builder-title">
+        <div class="section__heading section__heading--wide">
+          <div>
+            <p class="eyebrow">互動組課</p>
+            <h2 id="builder-title">依照你的課堂條件挑選模組</h2>
+          </div>
+          <p>選取條件後，點選課程卡片加入右側清單。系統會產生可複製、可列印的完整教案，並標示真空成型機、3D列印機或平板即可操作。</p>
+        </div>
+
+        <div class="builder-layout">
+          <aside class="filters" aria-label="課程篩選">
+            <div class="filter-group">
+              <h3>年段</h3>
+              <div class="segmented" role="group" aria-label="年段篩選">
+                <button class="filter is-active" type="button" data-filter="grade" data-value="all">全部</button>
+                <button class="filter" type="button" data-filter="grade" data-value="low">低</button>
+                <button class="filter" type="button" data-filter="grade" data-value="mid">中</button>
+                <button class="filter" type="button" data-filter="grade" data-value="high">高</button>
+              </div>
+            </div>
+            <div class="filter-group">
+              <h3>課程長度</h3>
+              <label><input type="checkbox" class="length-filter" value="2" checked /> 2節微模組</label>
+              <label><input type="checkbox" class="length-filter" value="4" checked /> 4節任務模組</label>
+              <label><input type="checkbox" class="length-filter" value="6" checked /> 6節專題模組</label>
+            </div>
+            <div class="filter-group">
+              <h3>主題能力</h3>
+              <label><input type="checkbox" class="tag-filter" value="地方探索" /> 地方探索</label>
+              <label><input type="checkbox" class="tag-filter" value="AI資料" /> AI資料</label>
+              <label><input type="checkbox" class="tag-filter" value="真空成型" /> 真空成型</label>
+              <label><input type="checkbox" class="tag-filter" value="3D列印" /> 3D列印</label>
+              <label><input type="checkbox" class="tag-filter" value="永續行動" /> 永續行動</label>
+            </div>
+            <div class="filter-group">
+              <h3>設備條件</h3>
+              <label><input type="checkbox" id="hasVacuum" checked /> 可使用真空成型機</label>
+              <label><input type="checkbox" id="hasPrinter" checked /> 可使用3D列印機</label>
+              <label><input type="checkbox" id="hasTablet" checked /> 有平板或電腦</label>
+            </div>
+          </aside>
+
+          <section class="course-area" aria-label="可選課程">
+            <div class="course-toolbar">
+              <p><strong id="resultCount">0</strong> 個課程符合條件</p>
+              <button class="text-button" id="clearFilters" type="button">重設篩選</button>
+            </div>
+            <div class="course-grid" id="courseGrid"></div>
+          </section>
+
+          <aside class="plan-panel" aria-label="已選課程">
+            <div class="plan-panel__header">
+              <p class="eyebrow">我的教案組合</p>
+              <h3><span id="selectedCount">0</span> 個模組，<span id="selectedLessons">0</span> 節</h3>
+            </div>
+            <section class="steam-panel" aria-labelledby="steam-title">
+              <div class="steam-panel__heading">
+                <h4 id="steam-title">STEAM+AI 六角分析</h4>
+                <p>依已選教案自動分析六個面向的比重。</p>
+              </div>
+              <div class="steam-chart" id="steamChart"></div>
+            </section>
+            <div class="selected-list" id="selectedList">
+              <p class="empty">尚未選取課程。從左側挑一張卡片加入。</p>
+            </div>
+            <div class="plan-actions">
+              <button class="button button--primary" id="copyPlan" type="button">複製完整教案</button>
+              <button class="button button--secondary" id="clearSelection" type="button">清空組合</button>
+            </div>
+            <textarea id="planText" readonly aria-label="產生的完整教案內容"></textarea>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section stage-notes" id="stage-notes" aria-labelledby="stage-notes-title">
+        <div class="section__heading">
+          <p class="eyebrow">每一階段課程內容說明</p>
+          <h2 id="stage-notes-title">年段定位與教學重點</h2>
+        </div>
+        <div class="notes-grid">
+          <article>
+            <h3>低年級：港都感知與AI初體驗</h3>
+            <p>從學校附近、港邊風景、船舶外型與燈塔故事出發，讓學生以圖卡、繪本、口說與簡單AI圖像辨識建立分類概念。真空成型可製作船徽、燈塔或港灣浮雕，3D列印則以教師預印的標準貨物與簡易配件支援測試。</p>
+            <dl>
+              <dt>建議節數</dt>
+              <dd>2至4節</dd>
+              <dt>評量方式</dt>
+              <dd>口頭分享、分類任務、作品說明卡</dd>
+            </dl>
+          </article>
+          <article>
+            <h3>中年級：航行資料與工程模型</h3>
+            <p>承接原本航海氣象、航蹤與港區停泊規劃課程，加入AI輔助整理資料、判斷天候與船舶航行風險。真空成型可做港灣地形盤、燈塔導光罩或船體外殼；3D列印可做船舵、支架與可替換測試零件。</p>
+            <dl>
+              <dt>建議節數</dt>
+              <dd>4至6節</dd>
+              <dt>評量方式</dt>
+              <dd>資料判讀學習單、進港任務模擬、原型測試紀錄</dd>
+            </dl>
+          </article>
+          <article>
+            <h3>高年級：AI永續港灣設計挑戰</h3>
+            <p>以海洋污染、船流密度、生態保護與港口安全作為問題情境，讓學生練習提出假設、蒐集資料、使用AI整理證據、建立解方。真空成型機用於製作船體與外罩，3D列印機用於明輪、船舵、固定架與迭代改良。</p>
+            <dl>
+              <dt>建議節數</dt>
+              <dd>6至8節或校本專題</dd>
+              <dt>評量方式</dt>
+              <dd>設計歷程檔案、同儕回饋、公開簡報與原型展示</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section safety" aria-labelledby="safety-title">
+        <div class="section__heading">
+          <p class="eyebrow">設備融入提醒</p>
+          <h2 id="safety-title">真空成型機與3D列印建議使用方式</h2>
+        </div>
+        <div class="equipment-layout">
+          <figure class="equipment-photo">
+            <img src="assets/vacuum-former-reference.jpeg" alt="課程採購參考的桌上型智慧真空成型機與成型作品" />
+            <figcaption>設備參考：桌上型智慧真空成型機，可支援船體外殼、港灣浮雕、感測器外罩與展示模型製作；3D列印則補足船舵、明輪、支架等精細零件。</figcaption>
+          </figure>
+          <div class="safety-list">
+            <p><strong>低年級：</strong>老師操作機器，學生完成紙模、色彩、觀察與成品裝飾。</p>
+            <p><strong>中年級：</strong>學生分組設計模具與測試表，老師協助加熱、抽氣與脫模。</p>
+            <p><strong>高年級：</strong>學生可參與材料選擇、模具高度限制、拔模角、失敗分析與改版，但加熱區仍需教師控管。</p>
+            <p><strong>3D列印：</strong>低年級由教師提供成品；中年級可修改尺寸與標籤；高年級可進入Tinkercad建模、切片設定與迭代測試。</p>
+            <p><strong>材料建議：</strong>優先使用可回收PET片、再生塑膠片或安全食品級塑膠片，搭配海廢減量與材料循環討論。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js?v=filters-scroll-20260615"></script>
+  </body>
+</html>
